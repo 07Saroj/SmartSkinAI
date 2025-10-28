@@ -16,7 +16,7 @@ COPY . .
 EXPOSE 5000
 
 # Run the Flask app
-CMD ["python", "app3.py"]
+# CMD ["python", "app3.py"]
 
 # Alternative: Using Gunicorn for production
 CMD gunicorn --bind 0.0.0.0:$PORT --workers 2 --threads 4 --timeout 120 app3:app
