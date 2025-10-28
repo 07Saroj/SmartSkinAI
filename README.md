@@ -305,7 +305,7 @@ ngrok http 5000
 
 ## 🌐 Live Demo
 
-*(Add your deployed link here once hosted)*
+*https://07saroj.github.io/SmartSkinAI/*
 
 ---
 
