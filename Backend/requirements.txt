@@ -8,24 +8,36 @@
 
 
 # --- Core ---
-Flask==3.0.3
-Flask-Cors==4.0.1
+# Flask==3.0.3
+# Flask-Cors==4.0.1
 
-# --- Machine Learning ---
-# tensorflow==2.16.1
+# # --- Machine Learning ---
+# # tensorflow==2.16.1
+# tensorflow-cpu==2.13.0
+# numpy==1.26.4
+# Pillow==10.3.0
+
+# # --- PDF Generation ---
+# reportlab==4.2.2
+
+# # --- Firebase Integration ---
+# firebase-admin==6.5.0
+
+# # --- WhatsApp / Twilio Integration ---
+# twilio==9.3.2
+# requests==2.32.3
+
+# # --- Utilities ---
+# gunicorn==22.0.0  # optional, for deployment
+
+
+numpy==1.24.3
 tensorflow-cpu==2.13.0
-numpy==1.26.4
-Pillow==10.3.0
-
-# --- PDF Generation ---
-reportlab==4.2.2
-
-# --- Firebase Integration ---
-firebase-admin==6.5.0
-
-# --- WhatsApp / Twilio Integration ---
-twilio==9.3.2
-requests==2.32.3
-
-# --- Utilities ---
-gunicorn==22.0.0  # optional, for deployment
+Flask==2.3.0
+Flask-CORS==4.0.0
+Pillow==10.0.0
+firebase-admin==6.2.0
+reportlab==4.0.4
+twilio==8.5.0
+requests==2.31.0
+gunicorn==21.2.0
