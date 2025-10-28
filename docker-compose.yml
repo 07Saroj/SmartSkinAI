@@ -12,7 +12,7 @@ services:
     environment:
       - GOOGLE_APPLICATION_CREDENTIALS=/app/serviceAccountKey.json
       - MODEL_PATH=/app/model.keras
-      - BASE_URL=https://bria-unurbanized-adorably.ngrok-free.dev # Replace with your deployed backend URL
+      - BASE_URL=https://smartskinai.onrender.com # Replace with your deployed backend URL
 
   frontend:
     build: ./frontend
