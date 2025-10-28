@@ -13,6 +13,11 @@ services:
       - GOOGLE_APPLICATION_CREDENTIALS=/app/serviceAccountKey.json
       - MODEL_PATH=/app/model.keras
       - BASE_URL=https://smartskinai.onrender.com # Replace with your deployed backend URL
+    
+      - TWILIO_ACCOUNT_SID=${TWILIO_ACCOUNT_SID}
+      - TWILIO_AUTH_TOKEN=${TWILIO_AUTH_TOKEN}
+      - TWILIO_WHATSAPP_NUMBER=${TWILIO_WHATSAPP_NUMBER}
+
 
   frontend:
     build: ./frontend
