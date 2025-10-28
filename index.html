@@ -756,9 +756,15 @@
 
   <script>
     // For local Docker Compose networking
+    // const API_URL = window.location.hostname === 'localhost'
+    // ? 'http://localhost:5000'
+    // : 'http://backend:5000';
+
+    // For deployment - set your actual backend URL here
     const API_URL = window.location.hostname === 'localhost'
     ? 'http://localhost:5000'
-    : 'http://backend:5000';
+    : 'https://smartskinai-backend.onrender.com';
+
 
     let currentPatientData = null;
 
