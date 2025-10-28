@@ -437,7 +437,8 @@ def save_prescription():
         return jsonify({"error": str(e)}), 500
 
 if __name__ == "__main__":
-    app.run(port=5000, debug=True)
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", port=port, debug=True)
 
 # ngrok http 5000
 # https://bria-unurbanized-adorably.ngrok-free.dev/
