@@ -21,6 +21,12 @@ import tempfile
 from twilio.rest import Client
 import requests
 
+# ✅ Memory-safe TensorFlow settings
+os.environ["TF_CPP_MIN_LOG_LEVEL"] = "3"
+tf.config.set_visible_devices([], "GPU")
+tf.config.threading.set_intra_op_parallelism_threads(1)
+tf.config.threading.set_inter_op_parallelism_threads(1)
+
 app = Flask(__name__)
 CORS(app)
 
@@ -31,9 +37,8 @@ db = firestore.client()
 
 # Load CNN model
 
-
-
 model = tf.keras.models.load_model("model.keras")
+print("Model loaded successfully!")
 
 CLASSES = [
     "eczema",
