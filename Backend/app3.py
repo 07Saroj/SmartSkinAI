@@ -36,9 +36,17 @@ firebase_admin.initialize_app(cred)
 db = firestore.client()
 
 # Load CNN model
-
-model = tf.keras.models.load_model("model.keras")
-print("Model loaded successfully!")
+model = None
+def load_model():
+    global model
+    if model is None:
+        print("🧠 Loading TensorFlow model into memory...")
+        model_path = os.getenv("MODEL_PATH", "model.keras")
+        model = tf.keras.models.load_model(model_path)
+        print("✅ Model loaded successfully!")
+    return model
+#model = tf.keras.models.load_model("model.keras")
+#print("Model loaded successfully!")
 
 CLASSES = [
     "eczema",
@@ -165,8 +173,9 @@ def predict():
 
         image_file = request.files['image']
         img_input = preprocess_image(image_file)
-
-        preds = model.predict(img_input)
+        # Load model lazily
+        model_instance = load_model()
+        preds = model_instance.predict(img_input)
         pred_index = int(np.argmax(preds))
         pred_class = CLASSES[pred_index]
 
