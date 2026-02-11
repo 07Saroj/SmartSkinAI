@@ -8,7 +8,6 @@
 ![License](https://img.shields.io/badge/License-Academic-red.svg)
 
 ---
-
 ## 🩺 Overview
 
 **SmartSkinAI** is an intelligent web-based healthcare system that leverages deep learning to detect skin diseases from uploaded images. Built with a CNN architecture based on ResNet (pre-trained on ImageNet), the system provides:
