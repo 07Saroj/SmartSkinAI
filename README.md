@@ -23,24 +23,6 @@
 This project bridges the gap between AI technology and accessible healthcare, particularly benefiting underserved and remote areas.
 
 ---
-
-## 👥 Team Members
-
-| Name | Registration No. |
-|------|------------------|
-| Bala Arun Polishetty | 23BCE8173 |
-| Bandaru Chandra Mouli | 23BCE8202 |
-| Julakanti Varshith | 23BCE8221 |
-| Souda Himavamsi | 23BCE8209 |
-| Saroj Chaudhuri | 23BCE8908 |
-| Swapnil Nandi | 22BCE8406 |
-
-**Under the Guidance of:** Prof. Ajith Jubilson E  
-**Department:** SCOPE  
-**University:** VIT-AP University
-
----
-
 ## 🎯 Features
 
 ### Core Functionality
