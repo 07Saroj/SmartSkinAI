@@ -8,31 +8,31 @@
 ![License](https://img.shields.io/badge/License-Academic-red.svg)
 
 ---
-## 🩺 Overview
+## Overview
 
 **SmartSkinAI** is an intelligent web-based healthcare system that leverages deep learning to detect skin diseases from uploaded images. Built with a CNN architecture based on ResNet (pre-trained on ImageNet), the system provides:
 
-✨ **Automated disease prediction** across 10 dermatological conditions  
-📄 **Personalized medical prescriptions** and dietary recommendations  
-📱 **WhatsApp integration** for instant PDF report delivery  
-🏥 **Nearby doctor finder** using geolocation and OpenStreetMap API  
-🔒 **Secure cloud storage** with Firebase Firestore  
-🌓 **Responsive UI** with dark/light theme support
+ **Automated disease prediction** across 10 dermatological conditions  
+**Personalized medical prescriptions** and dietary recommendations  
+**WhatsApp integration** for instant PDF report delivery  
+**Nearby doctor finder** using geolocation and OpenStreetMap API  
+**Secure cloud storage** with Firebase Firestore  
+**Responsive UI** with dark/light theme support
 
 This project bridges the gap between AI technology and accessible healthcare, particularly benefiting underserved and remote areas.
 
 ---
-## 🎯 Features
+## Features
 
 ### Core Functionality
-✅ **AI-Powered Detection** - ResNet-based CNN trained on dermatological datasets  
-✅ **Multi-Class Classification** - Identifies 10 skin conditions including melanoma, eczema, psoriasis, etc.  
-✅ **Confusion Matrix Evaluation** - Rigorous performance metrics for model accuracy  
-✅ **PDF Report Generation** - Professional medical reports with ReportLab  
-✅ **WhatsApp Notifications** - Automated report delivery via Twilio API  
-✅ **Doctor Locator** - Find nearby dermatologists using geolocation  
-✅ **Firebase Integration** - Secure cloud storage and retrieval  
-✅ **Theme Support** - Dark and light mode with localStorage persistence
+ **AI-Powered Detection** - ResNet-based CNN trained on dermatological datasets  
+**Multi-Class Classification** - Identifies 10 skin conditions including melanoma, eczema, psoriasis, etc.  
+**Confusion Matrix Evaluation** - Rigorous performance metrics for model accuracy  
+**PDF Report Generation** - Professional medical reports with ReportLab  
+**WhatsApp Notifications** - Automated report delivery via Twilio API  
+**Doctor Locator** - Find nearby dermatologists using geolocation  
+**Firebase Integration** - Secure cloud storage and retrieval  
+**Theme Support** - Dark and light mode with localStorage persistence
 
 ### Disease Categories
 - Eczema
@@ -48,7 +48,7 @@ This project bridges the gap between AI technology and accessible healthcare, pa
 
 ---
 
-## ⚙️ Tech Stack
+## Tech Stack
 
 ### **Frontend**
 - HTML5, CSS3, JavaScript (ES6+)
@@ -76,7 +76,7 @@ This project bridges the gap between AI technology and accessible healthcare, pa
 
 ---
 
-## 🚀 Installation & Setup
+## Installation & Setup
 
 ### Prerequisites
 - Python 3.10+
@@ -85,13 +85,13 @@ This project bridges the gap between AI technology and accessible healthcare, pa
 - Twilio account (optional, for WhatsApp)
 - ngrok (optional, for public URL)
 
-### 1️⃣ Clone Repository
+### 1️ Clone Repository
 ```bash
 git clone https://github.com/07Saroj/SmartSkinAI.git
 cd SmartSkinAI
 ```
 
-### 2️⃣ Backend Setup
+### 2 Backend Setup
 ```bash
 cd backend
 python -m venv venv
@@ -106,12 +106,12 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-### 3️⃣ Firebase Configuration
+### 3️ Firebase Configuration
 1. Create a Firebase project at [console.firebase.google.com](https://console.firebase.google.com)
 2. Generate a service account key (JSON)
 3. Save as `serviceAccountKey.json` in the project root
 
-### 4️⃣ Environment Variables (Optional)
+### 4️ Environment Variables (Optional)
 Create a `.env` file for sensitive credentials:
 ```env
 TWILIO_ACCOUNT_SID=your_account_sid
@@ -120,13 +120,13 @@ TWILIO_WHATSAPP_NUMBER=whatsapp:+14155238886
 BASE_URL=https://your-ngrok-url.ngrok-free.app
 ```
 
-### 5️⃣ Run the Application
+### 5️ Run the Application
 ```bash
 python app3.py
 ```
 Backend runs at → **http://127.0.0.1:5000**
 
-### 6️⃣ Access Frontend
+### 6️ Access Frontend
 Open `index.html` in your browser or serve via:
 ```bash
 python -m http.server 8000
@@ -135,7 +135,7 @@ Frontend accessible at → **http://localhost:8000**
 
 ---
 
-## 📡 API Endpoints
+## API Endpoints
 
 ### `POST /api/predict`
 **Description:** Analyzes uploaded image and returns disease prediction  
@@ -191,7 +191,7 @@ Frontend accessible at → **http://localhost:8000**
 
 ---
 
-## 🐳 Docker Deployment (Optional)
+## Docker Deployment (Optional)
 
 ### Dockerfile Example
 ```dockerfile
@@ -261,7 +261,7 @@ SmartSkinAI/
 
 ---
 
-## 🧪 Model Performance
+## Model Performance
 
 The CNN model was evaluated using **confusion matrix analysis** with the following architecture:
 - **Base Model:** ResNet (ImageNet pre-trained)
@@ -271,7 +271,7 @@ The CNN model was evaluated using **confusion matrix analysis** with the followi
 
 ---
 
-## 📱 WhatsApp Integration Setup
+##  WhatsApp Integration Setup
 
 1. Sign up at [Twilio](https://www.twilio.com)
 2. Activate WhatsApp sandbox
@@ -290,7 +290,7 @@ ngrok http 5000
  For frontend only
 ---
 
-## 🤝 Contributing
+## Contributing
 
 This is an academic project. For suggestions or issues:
 1. Fork the repository
@@ -301,14 +301,14 @@ This is an academic project. For suggestions or issues:
 
 ---
 
-## 📄 License
+## License
 
 This project is created as part of the **Engineering Clinics Project** at VIT-AP University.  
 **© 2025 SmartSkinAI Team. All Rights Reserved.**
 
 ---
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - VIT-AP University & SCOPE Department
 - Prof. Ajith Jubilson E (Project Guide)
@@ -318,12 +318,12 @@ This project is created as part of the **Engineering Clinics Project** at VIT-AP
 
 ---
 
-**⭐ If you find this project helpful, please consider starring the repository!**
+** If you find this project helpful, please consider starring the repository!**
 ```
 
 ---
 
-## 📝 Additional Files to Include:
+## Additional Files to Include:
 
 ### `.gitignore`
 ```
